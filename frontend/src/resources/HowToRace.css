@@ -1,0 +1,56 @@
+.how-to-race-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  background-color: var(--main-color);
+}
+
+.how-to-race-container iframe {
+  margin-bottom: 20px;
+  width: 100vw;
+  height: auto;
+}
+
+.how-to-race-container h1, .how-to-race-container p {
+  margin-bottom: 20px;
+}
+
+.how-to-race-container p {
+  padding: 0 5px
+}
+
+.how-to-race-container h1 {
+  font-size: 24px;
+}
+
+.how-to-race-container a {
+  text-decoration: underline;
+  color: var(--main-text);
+}
+
+.how-to-race-container .race-flag {
+  margin-left: 5px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 640px;
+}
+
+@media only screen and (min-width: 640px) {
+  .how-to-race-container iframe {
+    width: 640px;
+    height: 360px;
+  }
+
+  .how-to-race-container h1 {
+    font-size: 32px;
+  }
+
+  .how-to-race-container p {
+    padding: 0;
+  }
+}

@@ -1,0 +1,25 @@
+.loading-spinner-container {
+  height: calc(100vh - 60px);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-spinner {
+  animation: spin 2s linear infinite;
+  transform-origin: 'center center';
+}
+
+.inline {
+  height: auto !important;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

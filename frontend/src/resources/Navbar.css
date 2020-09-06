@@ -1,0 +1,210 @@
+nav {
+  position: fixed;
+  z-index: 2;
+  height: 60px;
+  width: 100%;
+  background-color: var(--main-color);
+  box-shadow: 0 1px 3px 0 rgba(255,255,255,0.1), 0 1px 2px 0 rgba(255,255,255,0.06);
+}
+
+.burger-menu a, .large-menu a {
+  text-decoration: none;
+  color: var(--main-text);
+  white-space: nowrap;
+  letter-spacing: 3px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.burger-menu {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.burger-menu img {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translate(-50%,0);
+  height: 40px;
+}
+
+.burger-menu-click {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+}
+
+.burger-menu-click:active {
+  background-color: var(--main-active);
+}
+
+.burger-menu .menu-items {
+  height: min-content;
+  width: min-content;
+  margin-right: -60px;
+  background-color: var(--main-color);
+}
+
+.burger-menu .menu-item {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--main-border);
+  background-color: var(--main-color);
+  box-shadow: 0 1px 3px 0 rgba(255,255,255,0.1), 0 1px 2px 0 rgba(255,255,255,0.06);
+  padding: 0 20px;
+}
+
+.burger-menu .menu-item:active {
+  background-color: var(--main-active);
+}
+
+.burger-menu .menu-item:nth-child(1) {
+  margin-top: 60px;
+}
+
+.burger-menu .sub-menu {
+  border-top: 1px solid var(--main-border);
+}
+
+.burger-menu .sub-menu-item {
+  border-top: 1px solid var(--main-active);
+  height: 60px;
+  padding: 0px 20px;
+  background-color: var(--main-border);
+  font-size: 0.75rem;
+}
+
+.burger-menu .sub-menu-item:active {
+  background-color: var(--main-active);
+}
+
+.burger-menu span {
+  padding: 0px 20px;
+}
+
+.burger-menu span, .large-menu span {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.burger-menu .sub-menu, .large-menu .sub-menu {
+  color: var(--main-text);
+  white-space: nowrap;
+  font-weight: 500;
+  letter-spacing: 3px;
+  height: 60px;
+  width: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+
+.burger-menu .sub-menu-items, .large-menu .sub-menu-items {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.large-menu .sub-menu {
+  margin-right: -1px;
+  border-left: 1px solid var(--main-border);
+  padding: 0px 20px;
+}
+
+.large-menu .sub-menu:hover {
+  background-color: var(--main-border);
+  border-left: 1px solid transparent;
+}
+
+.large-menu .sub-menu:hover .sub-menu-item {
+  border: 1px solid var(--main-active);
+  border-bottom-width: 0;
+}
+
+.large-menu .sub-menu:hover .sub-menu-item:nth-child(2) {
+  border-bottom-width: 1px;
+}
+
+.large-menu .sub-menu-items {
+  border-top: 1px solid var(--main-border);
+  box-shadow: 0 1px 3px 0 rgba(255,255,255,0.1), 0 1px 2px 0 rgba(255,255,255,0.06);
+  margin: 0 -20px;
+}
+
+.large-menu .sub-menu-item {
+  border: 1px solid var(--main-border);
+  border-top-width: 0;
+  border-left-width: 0;
+  height: 60px;
+}
+
+.large-menu .sub-menu-item:hover {
+  background-color: var(--main-active);
+}
+
+.large-menu .sub-menu-item:active {
+  background-color: var(--main-color);
+}
+
+.large-menu .sub-menu-item a {
+  display: flex;
+  justify-content: center;
+}
+
+.large-menu {
+  display: none;
+  height: 100%;
+  background-color: var(--main-color);
+}
+
+.large-menu .menu-items {
+  display: flex;
+  height: 100%;
+  width: min-content;
+}
+
+.large-menu .menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: min-content;
+  background-color: var(--main-color);
+  border-left: 1px solid var(--main-border);
+  padding: 0px 20px;
+}
+
+.large-menu .menu-item:active {
+  background-color: var(--main-active) !important;
+}
+
+.large-menu .menu-item:hover {
+  background-color: var(--main-border);
+}
+
+.large-menu .menu-item:nth-child(1) {
+  border-left: none;
+}
+
+@media only screen and (min-width: 640px) {
+  .burger-menu {
+    display: none;
+  }
+
+  .large-menu {
+    display: flex;
+    justify-content: center;
+  }
+}  

@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: rgb(0,0,0);
+  --main-active: rgb(25,35,35);
+  --main-border: rgb(35,45,45);
+  --main-text: rgb(255,255,255);
+}
+
+/* orbitron-regular - latin */
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./Orbitron-Regular.ttf');
+  src: local(''),
+       url('./Orbitron-Regular.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./Orbitron-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./Raleway-Regular.ttf');
+  src: local(''),
+       url('./Raleway-Regular.ttf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('./Raleway-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+nav, h1, h2, h3, h4, h5, h6 {
+  font-family: Orbitron, sans-serif;
+  letter-spacing: 3px;
+}
+
+.App {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  color: var(--main-text);
+  background-color: var(--main-color);
+}
+
+.page-content {
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  background-color: var(--main-color);
+  font-family: Raleway, sans-serif;
+}

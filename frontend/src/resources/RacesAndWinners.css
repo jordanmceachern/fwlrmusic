@@ -1,0 +1,94 @@
+.races-and-winners-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: var(--main-color);
+}
+
+.races-and-winners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 640px;
+}
+
+.single-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid var(--main-text);
+  margin-bottom: 40px;
+}
+
+.last {
+  border: none;
+  margin-bottom: 0px;
+}
+
+.races-and-winners h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  padding: 0 5px;
+}
+
+.races-and-winners a {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.password {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.winner {
+  color: rgb(255,0,0);
+  font-size: 20px;
+}
+
+.how-we-win-container {
+  display: flex;
+  padding: 10px;
+}
+
+.how-we-win-container a {
+  font-family: Orbitron;
+  letter-spacing: 1px;
+  width: min-content;
+  white-space: nowrap;
+  padding: 10px 50px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--main-text);
+  background-color: var(--main-border);
+}
+
+.how-we-win-container a:hover {
+  background-color: var(--main-active);
+}
+
+.how-we-win-container a:active {
+  background-color: var(--main-color);
+}
+
+.races-and-winners p {
+  display: flex;
+  align-self: center;
+  text-align: center;
+  margin-bottom: 10px;
+  max-width: 360px;
+  padding: 0 5px;
+}
+
+@media only screen and (min-width: 640px) {
+  .races-and-winners h2 {
+    font-size: 32px;
+    padding: 0;
+  }
+
+  .races-and-winners p {
+    padding: 0;
+  }
+}
